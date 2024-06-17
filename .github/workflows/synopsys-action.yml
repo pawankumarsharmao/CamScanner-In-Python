@@ -41,25 +41,17 @@ jobs:
   
     
   
-        - name: Checkout
-          uses: actions/checkout@v4
-        - name: Synopsys Action
-          uses: synopsys-sig/synopsys-action@v1.6.0
-          with:
+        
             #------------------------------------------COVERITY-----------------------------------------
-            coverity_url: http://us03-eng-paw.nprd.sig.synopsys.com:8085
-            coverity_user: admin
-            coverity_passphrase: admin123
+            #coverity_url: http://us03-eng-paw.nprd.sig.synopsys.com:8085
+            #coverity_user: admin
+            #coverity_passphrase: admin123
   
             #------------------------------------------BLACKDUCK----------------------------------------
             #blackduck_token: ${{ secrets.BLACKDUCK_API_TOKEN }}
             #blackduck_url: ${{ secrets.BLACKDUCK_URL }}
   
-            #------------------------------------------POLARIS------------------------------------------
-            polaris_server_url: https://poc.polaris.synopsys.com
-            polaris_access_token: rvb1uibn0h59d9e6tnba154881sogvlo291kset25m28robjetn6odr64voeuadgjaml3sv2madtu
-            polaris_assessment_types: "SCA,SAST"
-
+           
           
 
 
